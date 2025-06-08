@@ -1,0 +1,58 @@
+/* Jonah Aney 06/08/2026 CSD-340 Module 3.3: Build a Webpage Exercise, Part 3 */
+
+/* Center the h1 title */
+h1 {
+    text-align: center;
+}
+
+/* Side-by-side divs */
+.side-by-side {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Last div styles */
+.last-div {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+/* h3 tag weight */
+h3 {
+    font-weight: 500;
+}
+
+/* List weight */
+ol, ul {
+    font-weight: 300;
+}
+
+/* Ordered list and its title */
+.ordered-list-title,
+ol {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+/* Unordered list and its title */
+.unordered-list-title,
+ul {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+/* Link hover underline */
+a:hover {
+    text-decoration: underline;
+}
