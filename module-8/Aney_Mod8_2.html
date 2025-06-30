@@ -1,0 +1,114 @@
+<!--
+Jonah Aney June 28nd, 2025 
+CSD-340 Module 8.2: Build a Webpage Exercise, Part 6
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Aney_Mod8_2.css">
+</head>
+<body>
+<!-- Header section with assignment title -->
+    <header>
+        <h1>Assignment 8.2: Build a Web Page - Part 6</h1>
+    </header>
+
+<!-- Navigation bar with links (Home, About, Contact) -->    
+<div id="navbar">
+    <a href="#" class="active">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</div>
+
+<!-- Top 5 Favorite Movies Card -->
+    <div class="card">
+        <div class="card-title">Top 5 Favorite Movies</div>
+        <div class="card-content">
+            <table>
+<!-- Table for favorite movies with two characters from each -->
+                <thead id="movies">
+                    <tr>
+                        <th>Movie Name</th>
+                        <th>Two Characters</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Batman</td>
+                        <td>
+                            <ul>
+                                <li>Bruce Wayne/Batman</li>
+                                <li>Alfred</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+<!-- Repeat for each movie and set of characters -->
+                        <td>Ghostbusters 2</td>
+                        <td>
+                            <ul>
+                                <li>Ray</li>
+                                <li>Louis</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Indiana Jones and the Last Crusade</td>
+                        <td>
+                            <ul>
+                                <li>Dr. Jones</li>
+                                <li>Henry Jones Sr.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hook</td>
+                        <td>
+                            <ul>
+                                <li>Peter Banning/Pan</li>
+                                <li>Smee</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Goldeneye</td>
+                        <td>
+                            <ul>
+                                <li>James Bond</li>
+                                <li>Q</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <br><br>
+
+<!-- Card layout for favorite foods section-->
+    <div id="container">
+        <div class="card">
+            <div class="card-title">Top 5 Favorite Foods</div>
+            <div class="card-content">
+<!-- Ordered list of favorite foods with external recipe links -->
+                <ol>
+                    <li><a href="https://cookinginthemidwest.com/blog/beef-tacos-recipe/" target="_blank">Beef Tacos</a></li>
+                    <li><a href="https://heygrillhey.com/strip-steak/" target="_blank">New York Strip Steak</a></li>
+                    <li><a href="https://www.foodnetwork.com/recipes/ree-drummond/perfect-bacon-cheeseburgers-recipe-2043289" target="_blank">Bacon! Cheeseburger</a></li>
+                    <li><a href="https://www.thepioneerwoman.com/food-cooking/recipes/a9553/dreamy-apple-pie/" target="_blank">Apple Pie</a></li>
+                    <li><a href="https://www.allrecipes.com/recipe/229960/shrimp-scampi-with-pasta/" target="_blank">Shrimp Scampi</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer with copyright and a link back to the landing page -->  
+    <footer>
+        <p>&copy; 2025 Jonah Aney. All rights reserved.</p>
+        <p><a href="../index.html">Back to Landing Page</a></p>
+    </footer>
+</body>
+</html>
