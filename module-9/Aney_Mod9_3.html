@@ -1,0 +1,121 @@
+<!--
+Jonah Aney July 5th, 2025 
+CSD-340 Module 9.3: JavaScript Exercise, Part 1
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta name="description" content="My first webpage for learning HTML and CSS.">
+    <meta name="keywords" content="HTML, CSS, Web Development, CSD 340">
+    <meta name="author" content="Jonah Aney">
+    <meta name="robots" content="nofollow">
+    <link href="Aney_Mod2_2.css" type="text/css"
+        rel="stylesheet"  />
+
+<!-- JavaScript variables for words used in each tag -->    
+    <script>
+      var firstWord = "chemicals";
+      var secondWord = "poisoned";
+      var thirdWord = "perfume";
+      var fourthWord = "press";
+    </script>
+</head>
+<body>
+    <div id="container">
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+    <h2>Dialouge from the movie: Batman (1989)</h2
+
+<!-- Start of movie dialougue -->  
+    <p class="intro">
+        BATMAN
+    The police have got it wrong.
+    They're looking for one product.
+    It's much bigger than that. The
+    Joker's tainted hundreds of basic <span id="chemicals">_________</span>
+    at the source.
+    </p>
+    
+    <p>
+        VICKI
+    But... then whole shipments of
+    every product would be <span id="poisoned">_________</span>?
+    We'd all be dead.
+    </p>
+
+    <p> 
+        BATMAN
+    No. Each product only contains one
+    component. The poison only works
+    when they're mixed. Hair spray
+    won't do it alone. But... hair
+    spray and <span id="perfume">_________</span> and lipstick will
+    be toxic and -- Untraceable.
+    </p>
+
+    <p>
+        VICKI
+    (impressed)
+    How did you figure that out? No
+    answer. Batman steps away.
+    </p>
+
+    <p>
+        BATMAN
+    Take this to the <span id="press">_________</span>. He hands
+    her a thick envelope. She looks it
+    over cautiously.
+    </p>
+
+    <p>
+        VICKI
+    I may have some trouble with that.
+    A lot of people think you and the
+    Joker work together.
+    </p>
+
+    <p>
+        BATMAN
+    Do me a favor. Don't flatter my
+    enemy. The man's psychotic.
+    </p>
+
+    <p>
+        VICKI
+    Some people say the same about you.
+
+    This is a new idea to Batman. He pauses for a moment.
+    </p>
+
+    <p>
+        BATMAN
+    What people?
+    </p>
+
+    <p>
+        VICKI
+    Well, let's face it, you're not
+    exactly normal, are you?
+    </p>
+
+<!-- JavaScript for buttons to fill in blank spaces-->  
+    <p>
+        <button type="button" 
+          onclick="document.getElementById('chemicals').innerHTML = firstWord">chemicals</button> <br />
+        <button type="button" 
+          onclick="document.getElementById('poisoned').innerHTML = secondWord">poisoned</button> <br />
+        <button type="button" 
+          onclick="document.getElementById('perfume').innerHTML = thirdWord">perfume</button> <br />
+        <button type="button" 
+          onclick="document.getElementById('press').innerHTML = fourthWord">press</button> <br />
+    </p>
+    <hr />
+<!-- Footer -->  
+      <address>
+      <p><a href="https://www.bellevue.edu">Bellevue University</a></p>
+      <p>1000 Galvin Road South</p>
+      <p>Bellevue, NE 68005</p>
+    </address>
+  </div>
+</body>
+</html>
