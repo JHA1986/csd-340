@@ -1,0 +1,65 @@
+<!--
+Jonah Aney July 13th, 2025 
+CSD-340 Module 10.3: JavaScript Exercise, Part 2
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <script>
+// Function to display image id when clicked
+      function imageClicked(imageId) {
+        alert("You clicked the image with the id: " + imageId);
+      }
+    
+// Function to change the main image when hovering over
+      function displayImage(imageFile){
+        var largerImage = document.getElementById("mainImage");
+        var newNode = document.createElement("img");
+        newNode.id = "mainImage";
+        newNode.src = imageFile;
+        newNode.alt = "Large Image";
+        newNode.className = "mainImage";
+        newNode.style.width = "300px";
+        newNode.style.height = "200px";
+        largerImage.parentNode.replaceChild(newNode, largerImage);
+      }
+    </script>
+    <link rel="stylesheet" type="text/css" href="body1.css" />
+</head>
+<body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+<!-- Building image changes between night and day with mouse hover -->
+    <div>
+      <a href="#"
+         onmouseover="building.src='images/Building_day.PNG';"
+         onmouseout="building.src='images/Building_night.PNG';">
+        <img id="building" src="images/Building_night.PNG" alt="Building at night" border="0" onclick="imageClicked('building')" />
+      </a>
+    </div>
+    <div
+         style="color:blue;"
+         onmouseover="this.style.color='orange';"
+         onmouseout="this.style.color='blue';">
+      Run your mouse over the image to change to daytime.
+    </div>
+    
+<!-- Road image changes from summer to winter with mouse hover -->
+    <div>
+      <a href="#"
+         onmouseover="road.src='images/Road_woods_winter.PNG';"
+         onmouseout="road.src='images/Road_woods_summer.PNG';">
+        <img id="road" src="images/Road_woods_summer.PNG" alt="Road in summer woods" border="0" onclick="imageClicked('road')"/>
+      </a>
+    </div>
+    <div
+         style="color:blue;"
+         onmouseover="this.style.color='orange';"
+         onmouseout="this.style.color='blue';">
+      Run your mouse over the image to change to winter.<br />
+      Right-click and select View Source for more details.
+    </div>
+</body>
+</html>
